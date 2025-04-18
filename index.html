@@ -2,6 +2,22 @@
 layout: default
 ---
 
+<section class="hero-with-lottie">
+  <lottie-player
+    src="{{ '/assets/animations/seagrass.json' | relative_url }}"
+    background="transparent"
+    speed="1"
+    loop
+    autoplay
+    style="width:100%;max-width:800px;margin:2rem auto;">
+  </lottie-player>
+
+  <div class="hero-content">
+    <h1>Welcome to My Marine Science Site</h1>
+    <p>Exploring seagrass wave‑attenuation and coastal resilience.</p>
+  </div>
+</section>
+
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
